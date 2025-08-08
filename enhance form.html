@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase: Lists, Tables, Media & Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; background: #f9f9f9; }
+        section { margin-bottom: 2.5rem; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px #eee; }
+        h2 { color: #2c3e50; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+        th { background: #f0f0f0; }
+        ul, ol { margin-left: 2rem; }
+        label { display: block; margin-top: 1rem; }
+        fieldset { border: 1px solid #bbb; border-radius: 6px; padding: 1rem; margin-bottom: 1.5rem; }
+        legend { font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 0.5rem; margin-top: 0.3rem; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 0.7rem 1.5rem; background: #3498db; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #217dbb; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Page Showcase</h1>
+        <p>Well structured content using list,tables and media.</p>
+    </header>
+
+    <section>
+        <h2>1. Lists</h2>
+        <h3>Favorite Programming Languages</h3>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>Go</li>
+        </ul>
+        <h3>Steps to Build a Web Page</h3>
+        <ol>
+            <li>Plan the structure</li>
+            <li>Write the HTML</li>
+            <li>Add styles with CSS</li>
+            <li>Enhance with media</li>
+            <li>Test and deploy</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. Table</h2>
+        <h3>Sample Project Timeline</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Planning</td>
+                    <td>2025-08-01</td>
+                    <td>2025-08-05</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Development</td>
+                    <td>2025-08-06</td>
+                    <td>2025-08-20</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>2025-08-21</td>
+                    <td>2025-08-28</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Media</h2>
+        <h3>Sample Image</h3>
+        <img src="https://via.placeholder.com/400x200.png?text=Sample+Image" alt="Sample placeholder" width="400" height="200" style="display:block; margin-bottom:1rem;">
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h3>Sample Video</h3>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>4. Contact & Feedback Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="50" placeholder="Your full name">
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="contact-method">Preferred Contact Method *</label>
+                <select id="contact-method" name="contact-method" required>
+                    <option value="">--Select--</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    Subscribe to newsletter
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="rating">Rate our site (1-5) *</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="Your feedback..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Security</legend>
+                <label for="password">Create Password *</label>
+                <input type="password" id="password" name="password" required minlength="8" maxlength="20" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                title="8-20 characters, at least one letter and one number">
+
+                <label for="confirm-password">Confirm Password *</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="8" maxlength="20">
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
